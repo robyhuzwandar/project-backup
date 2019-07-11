@@ -1,0 +1,144 @@
+body{
+	font-family: Montserrat,sans-serif;
+	font-size: 12px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	line-height: 1.45;
+	font-weight: 600;
+	background-color: #f5f5f5;
+}
+.boxmenu{
+	position: relative;
+	display:block; 
+	background-color:white !important;
+  	margin:auto auto;
+  	margin-bottom: 5px;
+  	padding-top: 20px;
+  	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  	z-index: 989;
+  	overflow: auto;
+}
+.boxadd{
+	position: relative;
+	display: block;
+	z-index: 990;
+}
+.boxpage{
+	padding: 20px;
+	background-color:white;
+  	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  	z-index: 999;
+  	overflow: auto;
+}
+
+.boxpage>.home{
+	position: relative;
+	display: block;
+	background-color: white;
+	padding:5px 20px 20px;
+	text-align: center;
+	height: 400px;
+}
+.boxpage>.home>h2{
+	line-height: 1;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 30px;
+	margin:0 !important;
+	padding:40px 0 0 0;
+
+}
+.boxpage>.home>h1{
+	margin:0 !important;
+	padding:0 !important;
+	padding-top:5px !important;
+	line-height: 1;
+	font-weight: 800;
+	font-size: 40px;
+}
+.hasil{
+	display:relative;
+	width: 140px;
+	height: 140px;
+	font-size: 25px;
+	line-height: 1.4;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	margin-left:43%;
+	border-radius: 50%;
+	text-align: center;
+
+	
+}
+.hasil>label{
+	padding-top:52px;
+	color:white !important;
+	bottom:50% !important;
+}
+
+.boxmenu-item{
+	display: block;
+    min-height: 60px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+.boxicon{
+	display: inline-block;
+	border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+    background: rgba(0,0,0,0.2);
+    color:white;
+}
+.bgblue{
+	background-color: #00c0ef !important;
+}
+.bgred{
+	background-color: #dd4b39 !important;
+}
+.bggreen{
+	background-color: #00a65a !important;
+}
+.bgyello{
+    background-color: #f39c12 !important;
+}
+.labelmenu{
+	display: block;
+	position: relative;
+}
+.labelmenu>.judul{
+	font-size: 38px;
+	font-weight: 700px;
+	margin-left: 20px;
+}
+.labelmenu>.judul>a{
+	text-decoration: none;
+}
+.footer{
+	background-color: #222;
+	height: 100px;
+}
+.footer>p{
+	margin-top:20px;
+	color:white;
+}
+.fotoUpload{
+	padding:10px 0px;
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 170px;
+	border-radius: 30px;
+}

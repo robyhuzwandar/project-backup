@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRUD AJAX PHP</title>
+
+</head>
+
+<body>
+    <h2>CRUD AJAX</h2>
+    <table style="width: 80%; text-align: left;" border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Discription</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript">
+        $.ajax({
+            type: "GET",
+            data: "",
+            url: "getAll.php",
+            success: function(result) {
+                var resultObj = JSON.parse(JSON.stringify(result));
+                console.log(resultObj);
+                var dataHandler = $("#table-body");
+
+                $.each(resultObj, function(key, val) {
+                    // console.log(key);
+                    // var newRow = $("<tr>");
+                    // newRow.html("<td>" + val.id + "</td>"
+                    //     "<td>" + val.name + "</td>"
+                    //     "<td>" + val.description + "</td>"
+                    //     "<td>" + val.price + "</td>");
+                    // dataHandler.append(newRow);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

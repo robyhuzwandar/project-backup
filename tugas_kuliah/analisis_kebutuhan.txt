@@ -1,0 +1,87 @@
+Analisis Database :
+
+Post 
+- id
+- judul
+- artikel
+- cover
+- kategori_id
+- label
+- user_id
+
+Kategori
+- id
+- nama
+
+User
+- id
+- nama_lengkap
+- email
+- password
+
+Teknologi
+- id
+- nama
+
+Member
+- id
+- nama_lengkap
+- email
+- password
+
+Diskusi
+- id
+- judul
+- body
+
+Training
+- id
+- soal
+
+Jawaban
+- id
+- jawaban
+
+Saran
+- id
+- saran
+- member_id
+
+Event
+- id
+- cover
+- judul
+- body
+
+Tenaga Kerja
+- id
+- nama_lengkap
+- alamat_asal
+- alamat_sekarang
+- jenis_kelamin
+- agama
+- sekolah_dasar
+- sekolah_menengah
+- sekolah_tinggi
+- kemampuan
+- pengalaman_kerja
+- pengalaman_organisasi
+
+Analisis Fitur
+Public
+- view artikel
+- View pembaca
+- komentar
+- Ruang diskusi
+
+Admin
+- crud post
+- crud kategori
+- crud member
+- crud teknology
+- crud diskusi
+- crud saran
+- notif saran
+- grafik pengunjung
+- jumlah pembaca
+

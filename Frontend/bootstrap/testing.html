@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+    .image-brg-page-cart{
+      background-color: silver;
+      height: 55px;
+      width: 55px;
+    }
+    .header-card-cart{
+      margin: 5px;
+    }
+
+    .body-price-page-cart{
+      font-size: 14px;
+      float: right;
+    }
+
+    .close{
+      cursor: pointer;er;
+      float: right;
+    }
+
+
+    .item-page-cart{
+      padding-top: 5px;
+    }
+
+    .card-title{
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+
+    .btn-footer-page-cart{
+      float: right;
+    }
+
+    .btn-ceck-sote-cart{
+      margin-right: 15px;
+    }
+
+    .btn-edit-cart{
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 0px;
+    }
+
+    .btn-edit-cart:hover{
+      box-shadow: 10px;
+    }
+
+    .page-cart{
+      padding-top: 10px;
+      padding-bottom: : 10px;
+      margin-top: 10px;
+      margin-bottom: : 10px;
+    }
+
+    .body-page-cart{
+      padding-top: 10px;
+      padding-bottom: 10px; 
+    }
+
+    .page-checkout{
+      float: right;
+    }
+
+    .body-pay{
+      margin: 5px;
+    }
+
+    .btn-pay{
+      width: 100%;
+      background-color: #17a2b8;
+      margin-top : 5px;
+    }
+
+    .btn-remove-all-item{
+      float: right;
+      margin-bottom: -25px;
+      margin-top: -4px;
+    }
+
+    .hirarki-cart{
+      font-size: 12px;
+      color: silver;
+      padding-bottom: 15px;
+    }
+
+    .hirarki-cart-link{
+      text-decoration: none;
+    }
+
+    .total-belanja{
+      float: right;
+      color: #17a2b8;
+
+    }
+    .card-header{
+      background-color: ghostwhite;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+  </script>
+</head>
+<body>
+
+  <div class="container-fluid page-cart">
+      <div class="hirarki-cart">
+        <a class="hirarki-cart-link" href="">Halaman depan</a> / <a href="">Keranjang Belaja</a>
+      </div>
+
+      Keranjang Belanja
+      <br>
+      <br>
+    <!-- page item cart -->
+    <div class="row">
+      <div class="col col-7">
+        <div class="card">
+          <div class="card-body">
+            <input type="checkbox" aria-label="Checkbox for following text input" class="btn-ceck-sote-cart"> Pilih Semua Item
+            <button class="btn btn-sm btn-remove-all-item btn-danger">Hapus Semua</button>
+          </div>
+        </div>
+
+        <div class="body-page-cart">
+          <div class="card">
+            <div class="card-header">
+              <input type="checkbox" aria-label="Checkbox for following text input" class="btn-ceck-sote-cart">
+              <i class="fa fa-bank"></i> Rody Cell
+            </div>
+
+            <div class="card-body">
+
+              <div class="item-page-cart">
+                <div class="row">
+                  <div class="col col-lg-auto">
+                    <div class="image-brg-page-cart border border-light"> 
+                    </div>
+                  </div>
+                  <div class="col col-5">
+                    <h5 class="card-title">Special title treatment</h5> 
+                    <button type="button" class="btn-flat btn-edit-cart" data-toggle="modal" data-target="#myModal">
+                      <span aria-hidden="true" class="fa fa-edit"></span>
+                    </button>
+
+                  </div>
+                  <div class="col col-5 body-price-page-cart">
+                    Rp. 500.0000,00
+                    <button type="button" class="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>  
+              </div>
+
+              <div class="item-page-cart">
+                <div class="row">
+                  <div class="col col-lg-auto">
+                    <div class="image-brg-page-cart border border-light"> 
+                    </div>
+                  </div>
+                  <div class="col col-5">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <button type="button" class="btn-flat btn-edit-cart" data-toggle="modal" data-target="#myModal">
+                      <span aria-hidden="true" class="fa fa-edit"></span>
+                    </button>
+                  </div>
+                  <div class="col col-5 body-price-page-cart">
+                    Rp. 500.0000,00
+                    <button type="button" class="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>  
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="row">
+                <div class="col col-8">
+                  Total Harga : Rp. 4.000.000,00    
+                </div>
+                <div class="col col-4">
+                  <div class="btn-footer-page-cart">
+                    <button class="btn btn-flat btn-info btn-sm">Bayar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page item cart -->
+
+
+        <!-- page item cart -->
+        <div class="body-page-cart">
+          <div class="card ">
+            <div class="card-header">
+              <input type="checkbox" aria-label="Checkbox for following text input" class="btn-ceck-sote-cart">
+              <i class="fa fa-bank"></i> Rody Cell
+            </div>
+
+            <div class="card-body">
+
+              <div class="item-page-cart">
+                <div class="row">
+                  <div class="col col-lg-auto">
+                    <div class="image-brg-page-cart border border-light"> 
+                    </div>
+                  </div>
+                  <div class="col col-5">
+                    <h5 class="card-title">Special title treatment</h5> 
+                    <button type="button" class="btn-flat btn-edit-cart" data-toggle="modal" data-target="#myModal">
+                      <span aria-hidden="true" class="fa fa-edit"></span>
+                      <span class="label label-success">Baru</span>
+                    </button>
+
+                  </div>
+                  <div class="col col-5 body-price-page-cart">
+                    Rp. 500.0000,00
+                    <button type="button" class="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>  
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div class="row">
+                <div class="col col-8">
+                  Total Harga : Rp. 4.000.000,00    
+                </div>
+                <div class="col col-4">
+                  <div class="btn-footer-page-cart">
+                    <button class="btn btn-flat btn-info btn-sm">Bayar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end page item cart -->
+
+        <!-- modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                Details
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal end -->
+      </div>
+
+
+      <div class="col col-5 page-checkout">
+      <div class="card card-pay">
+          <div class="card-header">
+            <b>Bayar Sekaligus</b>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                Jumlah Barang :  3 <br>
+                Dari : 2 Penjual
+                <br>
+                <br>
+                <hr>
+                <b>Total Belaja : </b> <span class="total-belanja">Rp. 5.000.000,00</span>
+                <button class="btn btn-primary btn-pay">Bayar Sekaligus</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
